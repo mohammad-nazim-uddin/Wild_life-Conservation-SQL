@@ -30,6 +30,7 @@ SELECT r.name, s.common_name
 FROM sightings si
 JOIN rangers r ON si.ranger_id = r.ranger_id
 JOIN species s ON si.species_id = s.species_id;
+```
 
 ### 5. WHERE ক্লজ এর কাজ কী?
 
