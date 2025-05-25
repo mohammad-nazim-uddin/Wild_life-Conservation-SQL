@@ -25,6 +25,7 @@
 ###  4. JOIN কী এবং কীভাবে কাজ করে?
 JOIN অপারেশন ব্যবহার করে একাধিক টেবিলের ডেটা একত্রে আনা যায়। সাধারণত, এটি Primary Key এবং Foreign Key এর মাধ্যমে দুটি টেবিলকে যুক্ত করে এবং সম্পর্কিত তথ্য একত্রে দেখায়।
 উদাহরণ:
+```sql
 SELECT r.name, s.common_name
 FROM sightings si
 JOIN rangers r ON si.ranger_id = r.ranger_id
@@ -37,9 +38,6 @@ JOIN species s ON si.species_id = s.species_id;
 উদাহরণ:
 ```sql
 SELECT * FROM species WHERE conservation_status = 'Endangered';
-----
-
-----
 
 
 
